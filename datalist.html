@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="eng" dir="auto">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width-device-width, initial-scale=1.0">
+  <meta name="author" content="Herdiyan Adam Putra">
+  <meta name="keywords" content="IT Programmer, IT Developer, IT Development, Web Design">
+  <meta name="description" content="Study Case - HTML">
+  <meta http-equiv="60">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Ext HTML</title>
+</head>
+
+<body>
+  <!--Datalist Element
+Datalist Element adalah sebuah data yang dijadikan sebuah referensi elemen input text, sehingga didalamnya memiliki sebuah suggestion / saran ketika kita mengetikkan sebuah karakter di dalamnya.-->
+  <form></form>
+  <datalist id="List_Chickenfood">
+    <option value="Ayam Geprek">Ayam Geprek</option>
+    <option value="Ayam Goreng">Ayam Goreng</option>
+    <option value="Pecel Ayam">Pecel Ayam</option>
+    <option value="Sate Ayam"> Sate Ayam </option>
+    <option value="Sate Madura">Sate Madura</option>
+    <option value="Semur Ayam">Semur Ayam</option>
+    <option value="Sayur Ayam">Sayur Ayam </option>
+  </datalist>
+  </form>
+  <form>
+    <input type="text" name="" list="List_Chickenfood">
+    <!--Ketika dijalankan, cobalah ketik kata Ayam, maka secara otomatis akan memberikan saran untuk mengisi Ayam Geprek / Ayam Goreng , apabila kita klik sate maka akan diberikan 2 pilihan yaitu : sate madura dan sate ayam -->
+  </form>
+  <br> <br>
+
+
+
+  <!--Progress Element digunakan untuk menampilkan sebuah garis proses.-->
+  <progress value="70" max="100">Indicator value 70 to max 100</progress>
+  <br>
+  <progress value="20" max="100">Indicator value 20 to max 20</progress>
+  <br>
+  <progress value="100" max="1000">Indicator value 100 to max 1000</progress>
+  <!--Atribut value : adalah nilai dari progres itu sendiri-->
+  <!--Atribut max : adalah nilai maksimal dari value-->
+  <br>
+  <br>
+
+  <form>
+    <!--The <progress> HTML element displays an indicator showing the completion progress of a task, typically displayed as a progress bar. <progress/>-->
+  <label for="file">Result Progress KPI : 70% </label>
+  <progress id="file" max="100" value="70" >70 %</progress>
+  </form>
+</body>
+
+</html>

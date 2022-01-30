@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="eng" dir="auto">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width-device-width, initial-scale=1.0">
+  <meta name="author" content="Herdiyan Adam Putra">
+  <meta name="keywords" content="IT Programmer, IT Developer, IT Development, Web Design">
+  <meta name="description" content="Study Case II - HTML">
+  <meta http-equiv="60">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Attribute HTML</title>
+</head>
+
+<body>
+  <!--<table> element merepresentasikan data dengan lebih dari satu dimensi dalam bentuk sebuah tabel (table).
+Table di dalam HTML dibentuk dengan sebuah baris (row), tepatnya menggunakan element <tr> yang merupakan kepanjangan dari table row. Adapun element pendukung lain yang membentuk sebuah table adalah <th> (table header) dan <td> (table data). <td> menunjukkan sebuah cell, sedangkan <th> menunjukkan cell induk dan ditandai dengan tulisan cetak tebal.-->
+<br>
+
+  <table border="1" cellpadding="10" width="80%">
+    <!-- garis pembatas horizontal -->
+    <!-- <table border="1" rules="rows"> garis pembatas vertikal -->
+    <!--Atribut Rules
+Atribut Rules digunakan untuk memberikan garis pembatas, value dari atribut rules : rows / cols / all / none-->
+
+<!--Atribut Cellpadding
+Atribut Cellpadding digunakan untuk mengatur jarak antara text didalam sel dengan garis bordernya-->
+
+<!--- Atribut Bgcolor
+Atribut Bgcolor digunakan untuk memberikan background warna pada sebuah table-->
+
+
+
+
+      <tr bgcolor="green">
+      <!--- Atribut Width dan Height
+Atribut Width dan Height digunakan untuk mengatur lebar dan tinggi dari sebuah table-->
+      <th>NIM</th>
+      <th>Nama</th>
+      <th>Jurusan</th>
+    </tr>
+    <tr align="center">
+      <td>20300047</td>
+      <td>Herdiyan Adam Putra</td>
+      <td>Teknik Informatika</td>
+    </tr>
+    <tr align="center">
+      <td>20300048</td>
+      <td>Helmi Rhama Putra</td>
+      <td>Sistem Informasi</td>
+    </tr>
+    <tr align="center">
+      <td>20300049</td>
+      <td>Bani rachman</td>
+      <td>Teknik Sipil</td>
+    </tr>
+
+  </table>
+  <!--Table Element sesuai namanya element ini digunakan untuk membuat sebuah table, dengan struktur dasar
+<table>, <tr> (table row), <th> (table header) dan <td> (table data)
+Contoh :-->
+<!--Contoh width dan height :
+
+    <table border="1" bgcolor="orange" width="80%">
+     <tr height="100">
+       <th width="40%">No.</th>
+       <th width="60%">Nama Makanan</th>
+     </tr>
+     <tr height="70">
+       <td>1</td>
+       <td>Soto Makasar</td>
+     </tr>
+     <tr height="40">
+       <td>2</td>
+       <td>Nasi Goreng</td>
+     </tr>
+   </table>-->
+
+
+   <br> <br> <br>
+   <!--Atribut Rowspan dan Colspan
+Atribut Rowspan dan Colspan digunakan untuk menggabungkan
+Rowspan : Digunakan untuk menggabungkan antar baris
+Colspan : Digunakan untuk menggabungkan antar kolom
+Contoh :-->
+<table border="1" cellpadding="10" bgcolor="silver" width="50%">
+  <tr>
+    <th colspan="2">Nama Makanan</th>
+  </tr>
+  <tr>
+    <td rowspan="2">No 1 dan 2</td>
+    <td>Soto Makasar</td>
+  </tr>
+  <tr>
+    <td>Nasi Goreng</td>
+  </tr>
+</table>
+
+<br> <br> <br>
+<!--- Atribut Align
+Atribut align dalam table digunakan untuk mengatur posisi dari sebuah table
+<table align="left"> 
+<table align="center"> 
+<table align="right"> -->
+  <table border="1" align="right">
+    <tr>
+      <th colspan="2">Nama Makanan</th>
+    </tr>
+    <tr>
+      <td rowspan="2">No 1 dan 2</td>
+      <td>Soto Makasar</td>
+    </tr>
+    <tr>
+      <td>Nasi Goreng</td>
+    </tr>
+  </table>
+  <br> <br> <br> <br>
+
+  <!--Image Element
+
+Element Image digunakan untuk menampilkan gambar ke dalam web browser.
+Element Image bersifat self closing dan ditulis : <img>
+- Atribut Src
+Untuk menampilkan gambar kita dapat menambahkan atribut src yang berfungsi mengambil gambar baik dari internet ataupun dari local-->
+  <img src="https://winstarlink.com/wp-content/uploads/2019/11/Pengertian-Web-Designer-Web-Programmer-Web-Developer-dan-Web-Master.jpg"> <!--attribute penggunaan -->
+    <img src="img/web-program.jpg" alt="Web Programming"> <!--memberikan keterangan pada picture yang gagal di muat-->
+    <img src="img/button.png" alt="Gambar Button" title="Button Click"> <!-- memberikan descripsi pada picture yang di tampilkan -->
+    <img src="img/gambar.jpg" alt="Contoh Gambar" title="contoh gambar" width="50%" height="50%"> <!--Atribut Height & Width
+      Element Image memiliki atribut yang berfungsi untuk mengatur lebar dan tinggi dari image tersebut, kita bisa melakukannya dengan menambahkan atribut widht dan height dalam satuan pixel / persen-->
+      <br>
+      <img src="img/x-icon.png" alt="logo google" title="logo google" width="30%" height="20%" border="4">
+      <!-- Atribut Border
+Atribut Border berfungsi untuk memberikan garis tepi / bingkai. Value dari atribut border satuannya adalah pixel-->
+        <br> <br>
+
+    <!--Atribut Align
+Atribut Align berfungsi untuk mengatur posisi dari gambar terhadap text di sekitarnya. Ada 4 value dalam atribut align ini : bottom, left, middle, right dan top.
+Untuk mencoba mengaplikasikan atribut tersebut kita membutuhkan text, agar nanti terlihat perbedaannya.-->
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam molestias consectetur soluta, commodi eveniet ducimus esse dolores! Quisquam facere ea consectetur quam incidunt illum, ab, beatae vitae, unde in a. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem necessitatibus laudantium voluptatum totam ducimus incidunt quam quod. Veritatis neque ipsa, necessitatibus vitae quae minima dolorem totam eligendi, perferendis eveniet doloribus. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda hic, minima debitis fuga dolores animi, in itaque sint voluptatibus obcaecati dignissimos ea explicabo, vitae soluta. Ullam fuga tempora officiis itaque?
+        <img src="img/x-icon.png" alt="logo google" title="logo google" width="10%" height="10%" border="4" align="right">
+      </p>
+
+
+    <!--Caption Element dalam table digunakan untuk memberikan keterangan pada sebuah tab-->
+    <table border="1">
+      <!-- maka pada tampilan di dalam table ada keterangan " Table 1.0 "-->
+      <caption>Table 1.0</caption>
+      <tr>
+        <th colspan="2">Nama Makanan Betawi</th>
+      </tr>
+      <tr>
+        <td rowspan="2">No 1 dan 2 </td>
+        <td>Jengkol Spesial</td>
+      </tr>
+      <tr>
+        <td>Semur Daging Lebaran</td>
+      </tr>
+    </table>
+    <br> <br> <br>
+
+
+      <!--============================================================================-->
+
+
+
+    <!--HTML <thead> element digunakan untuk mengelompokkan konten yang terletak di kepala (atas) sebuah tabel. Di dalam element <thead> tersebut, harus ditulis element <tr> yang menunjukkan table row atau baris sebuah table.
+
+Dalam sebuah tabel, <thead> element digunakan bersamaan dengan element <tbody> yang menunjukkan isi tabel dan <tfoot> yang menunjukkan bagian kaki sebuah tabel.
+
+Dalam penggunaannya, <thead> harus ditulis sebagai anak element dari <table> atau lebih tepatnya terletak di dalam element <table> setelah <caption> dan <colgroup> element, atau sebelum <tbody>, <tfoot> dan <tr>.
+
+Element <thead>, <tbody> dan <tfoot> sangat berguna ketika menulis sebuah tabel yang panjang lebar dan lebih dari satu halaman, yang mana masing-masing halaman tersebut, table header dan footer-nya ikut terlampir (tertulis atau tercetak). Ketiga element itu tidak akan mempengaruhi layout sebuah table, akan tetapi, Anda dapat menggunakan CSS style untuk mengatur sesuai keinginan.-->
+
+
+<!--Thead, Tbody dan Tfoot Element
+Ketiga element tersebut digunakan untuk membungkus baris pada sebuah table, dimana thead untuk judul, tbody untuk isi dan tfood untuk keterangan paling bawah.
+Secara tampilan tidak akan terlihat perbedaannya, karena fungsi dari ketiga element tersebut hanya untuk mengelompokkan saja, sehingga ketika nanti kita sudah berhubungan dengan CSS dan juga Javascript akan jauh lebih mudah untuk menghandle table tersebut.-->
+
+<!--<thead> tidak memiliki attribute khusus yang dapat digunakan, sedangkan didalam HTML 4.01 terdapat attribute align, bgcolor, char, charoff dan valign. Attributes ini sudah usang dan tidak dipakai lagi didalam HTML5, sehingga tidak dibahas disini.-->
+<table border="2" width="50%" align="center">
+  <thead>
+    <tr bgcolor="grey">
+      <th>No</th>
+        <th>Tagihan Bulan</th>
+        <th>Total Tagihan Bayar Listrik</th>
+    </tr>
+  </thead>
+  <tfoot>
+    <!---->
+      <tr>
+        <td></td>
+        <td>Grand Total</td>
+        <td>800.000</td>
+      </tr>
+  </tfoot>
+  <tbody>
+    <tr>
+      <td>1</td>
+        <td>September 2021</td>
+        <td>400.000</td>
+    </tr>
+    <tr>
+      <td>2</td>
+        <td>Oktober 2021</td>
+        <td>400.000</td>
+    </tr>
+  </tbody>
+</table>
+<br> <br>
+<!--Tag pembuka (<thead>) wajib ditulis, sedangkan tag penutup (</thead>) boleh diabaikan (tidak ditulis) apabila setelah element <thead> tersebut, diikuti langsung oleh element <tbody> atau <tfoot>.-->
+
+<!-- Contoh 2 : -->
+<table border="1" cellpadding="5" width="30%">
+  <thead>
+    <tr bgcolor="orange">
+      <th align="center">No</th>
+      <th>nama</th>
+      <th>NIM</th>
+      <th>Jurusan </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td align="center">1</td>
+      <td>Herdiyan Adam Putra</td>
+      <td>20300047</td>
+      <td>Teknik Informatika</td>
+    </tr>
+
+    <tr>
+      <td align="center">2</td>
+      <td>Helmi Rhama Putra</td>
+      <td>20300048</td>
+      <td>Teknik Sipil</td>
+    </tr>
+
+
+    <tr>
+      <td align="center">3</td>
+      <td>Ramdani Ali Sera</td>
+      <td>20300049</td>
+      <td>Teknik Komputer</td>
+    </tr>
+
+  </tbody>
+  <tfoot>
+      <tr>
+        <td colspan="4" align="center">Mahasiswa STMIK Muhammadiyah Jakarta </td>
+      </tr>
+  </tfoot>
+</table>
+<br> <br> <br>
+
+
+<table border="3" width="50%">
+  <thead>
+    <tr bgcolor="red">
+      <th>No</th>
+      <th>Nama Hidangan</th>
+      <th>Asal kota</th>
+      <th>Image</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr align="center">
+      <td>1</td>
+      <td>Nasi Goreng</td>
+      <td>DKI Jakarta</td>
+      <td> <img src="img/nasi-goreng.jpg" alt="gambar nasi goreng" width="100"></td>
+    </tr>
+    <tr align="center">
+      <td>2</td>
+      <td>Soto Ayam</td>
+      <td>Makasar</td>
+      <td> <img src="img/soto-makasar.png" alt="gambar soto makasar" width="100"></td>
+    </tr
+  </tbody>
+
+</table>
+<br> <br> <br>
+
+
+
+
+</body>
+
+</html>

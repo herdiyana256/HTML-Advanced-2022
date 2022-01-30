@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width-device-width, initial-scale=1.0">
+  <meta http-equiv="50">
+  <meta name="author" content="Niomic - HTML">
+  <meta name="description" content="HTML Study Case">
+  <title>Griya Utama Mandiri</title>
+</head>
+
+<body>
+  <!--- Input VS Button
+Button yang dibuat dengan element input digunakan didalam element form sedangkan button yang dibuat dengan element button digunakan diluar element form-->
+  <form>
+    <input type="text">
+    <br>
+    <input type="password">
+    <br>
+    <input type="submit" value="Click Submit">
+    <input type="button" value="Click Button">
+    <input type="reset" value="Click Reset">
+  </form>
+
+  <hr>
+  <form>
+    <!--Hasil yang di tampilkan apabila membuat dengan element button : tampilan nya horizontal -->
+    <button type="button" name="button">Button 2</button>
+    <button type="submit" name="button">Submit 2</button>
+    <button type="reset" name="button">Reset 2</button>
+  </form>
+  <br>
+
+  <!-- Input Element Type Color
+Element input merupakan element yang banyak digunakan ketika kita membangun sebuah website. Element Input ditulis <input> dan merupakan self closing tag.
+- Atribut Type Color 
+Atribut Type pada element input memiliki value / nilai yang berbeda-beda salah satunya adalah “color” yang digunakan untuk menampilkan pilihan sebuah warna
+<input type="color"> -->
+  <form>
+    <p>Klik Warna disamping ini: <input type="color"></p>
+    <!-- maka akan menghasilkan pilihan warna R G B -->
+  </form>
+  <br>
+
+  <form>
+    <!-- maka akan menghasilkan input : email , yang dimana apabila user salah memasukan type karakteryang tidak mengacu pada sebuah karakter email,akan ada notifikasi error @ an missing for submit -->
+
+    <p> Masukan email : <input type="email" name="email" autocomplete="on"></p>
+    <!-- kita juga bisa memasukan fitur pada autocomplete yang dimana fungsi nya memberikan rekomendasi dari email yang pernah dimasukan , kita juga bisa mematikan fitur nya "off"-->
+
+    <!-- <p>Masukan Email : <input type="email" name="email"></p> -->
+    <input type="submit" name="" value="Submit">
+  </form>
+  <br>
+
+  <!--Input Element Type URL
+
+Element input merupakan element yang banyak digunakan ketika kita membangun sebuah website. Element Input ditulis <input> dan merupakan self closing tag.
+
+- Atribut Type URL 
+Atribut Type pada element input memiliki value / nilai yang berbeda-beda salah satunya adalah “url” yang digunakan untuk input khusus link url
+<input type="url">-->
+  <form>
+    <p> Masukan URL Website : <input type="url"></p>
+    <input type="submit" name="" value="SUBMIT">
+  </form>
+  <br>
+
+
+
+  <!--Input Element Type Search
+
+Element input merupakan element yang banyak digunakan ketika kita membangun sebuah website. Element Input ditulis <input> dan merupakan self closing tag.
+
+- Atribut Type Search 
+Atribut Type pada element input memiliki value / nilai yang berbeda-beda salah satunya adalah “search” yang digunakan untuk searching
+<input type="search">-->
+  <form>
+    <p>Apa yang anda cari <input type="search"></p>
+  </form>
+  <br>
+
+  <!---Input Element Type Number
+
+Element input merupakan element yang banyak digunakan ketika kita membangun sebuah website. Element Input ditulis <input> dan merupakan self closing tag.
+
+
+<form>
+  - Atribut Min dan Max 
+Atribut Type min dan max digunakan untuk membatasi angka minimum dan maksimum yang boleh dimasukkan kedalam element input tersebut. -->
+  <p> Masukan No rumah mu : <input type="number" min="1" max="20"></p>
+
+
+
+  <!--- Atribut Type Number 
+Atribut Type pada element input memiliki value / nilai yang berbeda-beda salah satunya adalah “number” yang digunakan untuk input sebuah angka
+<input type="number">-->-->
+  <p>No rumah mu : <input type="number"></p>
+  <br>
+
+  <!--- Atribut Step
+Atribut Type step ini digunakan untuk memberikan kelipatan ketika kita mengklik tombol keatas atau ke bawah
+<input type="number" min="1" max="15" step="3"> -->
+  <p> Memasukan type number dengan memberikan kelipatan setiap klik bertambah angka 2 <input type="number" min="1"
+      max="15" step="2"></p>
+  </form>
+  <br>
+
+
+  <form>
+    <!--Input Element Type Range
+
+Element input merupakan element yang banyak digunakan ketika kita membangun sebuah website. Element Input ditulis <input> dan merupakan self closing tag.
+- Atribut Type Range 
+Atribut Type pada element input memiliki value / nilai yang berbeda-beda salah satunya adalah “range” yang digunakan untuk input dengan tampilan slider
+<input type="range">-->
+
+    <input type="range" min="1" max="15" step="2">
+    <!--Memasukan type number dengan memberikan kelipatan  setiap klik bertambah angka 2 -->
+
+    <!-- <p>Masukan No Plat Motor : <input type="range"></p> -->
+  </form>
+  <br>
+
+  <form>
+    <!--Input Element Type Tel
+Element input merupakan element yang banyak digunakan ketika kita membangun sebuah website. Element Input ditulis <input> dan merupakan self closing tag.
+- Atribut Type Range 
+Atribut Type pada element input memiliki value / nilai yang berbeda-beda salah satunya adalah “tel” yang digunakan untuk input nomer telphone, baik telp rumah, hp ataupun nomer whatsapp
+
+<input type="tel"> : akan menampilkan form input untuk number , jika di dalam tampilan sebuah website, maka tampilan nya akan menampilkan keyboard/ space text-->
+    <p>No Whatapps : <input type="tel"></p>
+  </form>
+  <br>
+
+
+
+  <!--Input Element (Date)
+Element input merupakan element yang banyak digunakan ketika kita membangun sebuah website. Element Input ditulis <input> dan merupakan self closing tag.
+Untuk membuat sebuah input element untuk pengisian tanggal kita bisa melakukannya dengan berbagai atribut untuk tanggal :
+ -->
+  <form>
+    <table>
+      <p> Date <input type="date"></p>
+      <p>time<input type="time"></p>
+      <p>datetime-local <input type="datetime-local"></p>
+      <p> datetime <input type="datetime"></p>
+      <p> month <input type="month "></p>
+      <p> week<input type="week"></p>
+      <p> day <input type="day"></p>
+  </form>
+  <br>
+
+
+  <!--Element input merupakan element yang banyak digunakan ketika kita membangun sebuah website. Element Input ditulis <input> dan merupakan self closing tag.
+- Atribut Type File 
+Atribut Type pada element input memiliki value / nilai yang berbeda-beda salah satunya adalah “file” yang digunakan untuk memilih sebuah file
+<input type="file">-->
+  <form>
+    <p>Masukan File : <input type="file"></p> <!-- bisa melakukan input file /  document s-->
+
+    <!-- Atribut Accept 
+Atribut Accept digunakan untuk membatasi tipe file yang akan diupload, contoh : <input type="file" accept="image/x-png">
+Maka hanya image dengan ekstensi .png saja yang dapat dipilih-->
+    <p> Masukan File dengan Attribute Accept ext PNG : <input type="file" accept="image/x-png"></p>
+
+    <p>Masukan File dengan Attribute Accept ext JPG : <input type="file" accept="image/x-jpg"></p>
+    <!--Maka hanya image dengan ekstensi .jpg saja yang dapat dipilih-->
+  </form>
+  <br>
+
+
+  <form>
+    <!--Input Element (Checkbox & Radio)
+Element input merupakan element yang banyak digunakan ketika kita membangun sebuah website. Element Input ditulis <input> dan merupakan self closing tag.
+
+- Atribut Type Checkbox & Radio 
+Atribut Type pada element input memiliki value / nilai yang berbeda-beda salah satunya adalah “checkbox” dan “radio”-->
+    <p>Es Teh <input type="checkbox"></p>
+    <p>Es Jeruk <input type="checkbox"></p>
+    <p> Es Batu <input type="checkbox"></p>
+    <!-- hasil check box ini kotak-->
+
+
+    <!--Atribut Checked
+Atribut Checked kita bisa memilih salah satu checkbox / radio saat mengakses halaman website
+Contoh :-->
+    <p>Nasi Goreng <input type="checkbox" checked></p>
+    <!-- maka akan memilih salah satu checkbox atau radio yang di pilih  -->
+    <hr>
+
+    <p>Es Anggur <input type="radio"></p>
+    <p>Es Kopi <input type="radio"></p>
+    <p>Es Pop Ice <input type="radio"></p>
+    <!-- hasil check box ini bulat-->
+
+    <p>Nasi Uduk <input type="radio" checked></p>
+    <!-- maka akan memilih salah satu checkbox atau radio yang di pilih  -->
+    <hr>
+  </form>
+  <br>
+
+  <!--Label Element
+
+Label Element secara tampilan tidak akan terlihat, namun secara fungsi kita dapat melihat perbedaannya :
+Dengan kita menambahkan label element seperti ini <label>Nasi Goreng: <input type="checkbox"></label> ketika kita klik tulisan “Nasi Goreng” maka secara otomatis terpilih.-->
+  <form>
+    <label> Nasi Mcd <input type="checkbox"></label>
+    <label> Nasi CFC <input type="checkbox"></label>
+    <label> Nasi KFC <input type="checkbox"></label>
+    <hr>
+    <!-- dengan attribvute element label kita bisa melihat perbedaan nya yaitu, pada saat value di klik maka secara otomatis tercheck list berbeda apabila kita tidak menggunakan label dan menggunakan attribute paragraf saja, harus manual dan clik ( tidak otomatis )-->
+    <label> Ketoprak <input type="radio"></label>
+    <label> Nasi Goreng <input type="radio"></label>
+    <label> Nasi Kebuli <input type="radio"></label>
+  </form>
+  <br>
+  <br> <br> <br> <br>
+
+
+
+  <form>
+    <!--Textarea Element
+Element Textarea digunakan untuk input sebuah data dengan ukuran teks yang lebih banyak
+<textarea></textarea> 
+
+- Atribut Rows dan Cols
+Atribut Rows dan Cols digunakan untuk mengatur jumlah baris dan kolom pada textarea atau untuk lebih mudahnya agar dapat mengatur panjang dan lebarnya
+<textarea rows="8" cols="18"></textarea>
+
+- Memberi inputan awal
+Kita juga dapat memberikan inputan awal pada textarea yang kita tulis, caranya :
+<textarea rows="8" cols="18">Contoh Textarea</textarea> -->
+    <textarea name="Contoh textarea" cols="30" rows="10">STMIK Muhammadiyah Jakarta</textarea>
+    <br>
+
+    <!--- Atribut Maxlength
+Atribut ini digunakan untuk memberikan batasan jumlah karakter yang di input kedalam textarea
+<textarea rows="8" cols="18" maxlength="20">Contoh Textarea</textarea> -->
+    <textarea name="Contoh maxlength" cols="30" rows="10" maxlength="15"></textarea>
+  </form>
+  <br> <br> <br> <br>
+
+  <form>
+    <!--Select, Option & Optgroup Element
+Select & Option Element  digunakan untuk inputan dalam bentuk dropdown-->
+    <p>Pilihan Menu Makanan Griya Resto ID :
+      <!--Atribut Multiple
+Dengan atribut multiple, memungkinkan kita untuk memilih lebih dari satu menu-->
+      <select name="Pilihan Menu" multiple></select>
+      <!-- <select name="Pilihan Menu" id="""> -->
+      <option value="Nasi Bakar"> Nasi Bakar</option>
+      <option value="Nasi Bakar"> Mie Pangsit</option>
+      <option value="Nasi Bakar"> Kerak Telor</option>
+      <option value="Nasi Bakar"> Nasi Padang</option>
+      <!--Atribut Selected
+Dengan atribut selected kita bisa menandai menu mana dulu yang akan kita pilih, ketika halaman website pertama kali diakses
+<option value="tempoyak-ikan" selected>Nasi Rames</option> -->
+      <option value="Nasi Rames" selected> Nasi Rames</option>
+      </select>
+    </p>
+  </form>
+  <br> <br> <br> <br>
+
+
+
+  <form>
+    <!--Optgroup Element
+Dengan Optgroup kita bisa memiliki pilihan pada menu dropdown lebih dari 1 tipe. Contoh :-->
+    <p> Pesanan :
+      <select name="Pesanan">
+        <!--<optgroup> element digunakan untuk mengelompokkan beberapa item (option) didalam daftar pilihan (<select> element). Kelompok (group) dapat diberi label tertentu dengan menggunakan attribute label .-->
+        <optgroup label="Makanan ">
+          <option value="Jungle Food">Jungle Food</option>
+          <option value="Sea Food">Sea Food</option>
+          <option value="No Food">No Food</option>
+          <option value="Fish Food">Fish Food</option>
+        </optgroup>
+        <!-- kita juga membuat tambahan jenis / spesifikasi menu-->
+        <optgroup label="Minuman">
+          <option value="POP Ice"> POP Ice</option>
+          <option value="Marimas Mangga"> Marimas Mangga</option>
+          <option value="Jasjus Jambu"> Jasjus Jambu</option>
+          <option value="Torabika susu"> Torabika susu</option>
+        </optgroup>
+      </select>
+    </p>
+  </form>
+
+
+</body>
+
+</html>

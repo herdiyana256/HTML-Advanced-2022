@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <!--Meta tag viewport ditambahkan agar desain responsive dapat tampil sempurna di dalam layar berukuran kecil (seperti tablet atau smartphone).
+Meta tag viewport ditulis seperti ini  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+Dan untuk menguji meta tag viewport kita memasukkan sebuah image, dan sebuah text paragraf seperti dibawah ini-->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width-device-width, initial-scale=1.0">
+  <title>Viewport pada HTML</title>
+</head>
+
+<body>
+  <h3>Artikel Griya Utama Mandiri</h3>
+  <p>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat perferendis aperiam exercitationem facilis officiis
+    sint repellendus minima magnam unde ducimus ea iste molestias doloremque, rem ratione totam tenetur sunt quo. Lorem
+    ipsum dolor sit amet consectetur adipisicing elit. Saepe neque quas laudantium aperiam consectetur ea, iure totam
+    aspernatur delectus natus, illo quos cupiditate modi, iusto dicta mollitia necessitatibus? Non, quod!
+    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vero quaerat repellendus sapiente animi nihil nulla,
+    reiciendis saepe nesciunt voluptatibus facere ratione eos. Dicta accusantium voluptatum aliquam voluptates, saepe
+    fuga ducimus?
+    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consectetur maxime, suscipit est error impedit laudantium
+    quo. Odit, nemo cum optio dolores, reprehenderit facere obcaecati repellat atque earum inventore fugiat expedita?
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo quos accusantium fugit voluptates dolorem saepe magnam
+    laboriosam possimus! Cumque maxime illum modi exercitationem earum voluptates possimus veritatis cum, enim ab.
+  </p>
+
+  <!--iframe digunakan untuk memasukkan halaman dari luar ke dalam website kita, bisa dalam bentuk file pdf, youtube, website lain, ataupun maps.
+<iframe src=""></iframe>-->
+  <iframe src="https://stmikmj.edulearning.me/mod/elearning/file/home/f1/data.rm" frameborder="2" width="500px"
+    height="500px"></iframe>
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/CkkTIwRy0Aw" title="YouTube video player"
+    frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+    allowfullscreen></iframe>
+
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.5536394416035!2d106.89647671430997!3d-6.190430862372789!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f4c66986bae1%3A0x1863fcd3a2d7a797!2sJl.%20Jati%20Klp.%20No.31%2C%20RT.8%2FRW.4%2C%20Jati%2C%20Kec.%20Pulo%20Gadung%2C%20Kota%20Jakarta%20Timur%2C%20Daerah%20Khusus%20Ibukota%20Jakarta%2013220!5e0!3m2!1sid!2sid!4v1640524206339!5m2!1sid!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    <br> <br> <br>
+
+
+    <!--HTML audio element menunjukkan sebuah sound atau audio yang dapat disisipkan pada halaman web dan diputar untuk didengarkan. Modern browser mendukung beberapa format file audio diantaranya: mp3, ogg dan wav.
+     Atribut Src
+Untuk memasukkan file audio kita membutuhkan atribut src.
+Pastikan sudah menyisipkan file audionya :-->
+ <audio src="example-file.mp3" controls></audio> <br>
+
+ <audio src="example-file.mp3" controls muted></audio> <br>  
+  <!-- Menampilkan namun langsung dilakukan muted -->
+
+ <audio src="example-file.mp3" controls loop></audio>  <br>
+  <!-- Melakukan perulangan audio apabila music sudah selesai list nya, repeat sound -->
+
+
+  <audio src="example-file.mp3" controls preload="auto"></audio>  <br>
+  <!-- auto : Artinya saat web di load, audio akan otomatis di buffer / download sehingga saat diplay tidak buffer lagi. 
+  Terisi penuh untuk buffer nya -->
+
+  <audio src="example-file.mp3" controls preload="metadata"></audio>  <br>
+  <!-- meta : Artinya saat web di load, audio akan di buffer / download sebagian dan sebagian yang lain saat di Play 
+  buffer akan terisi 1/2 , akan otomatis buffer nya apabila kita klik play 
+  -->
+
+  <audio src="example-file.mp3" controls preload="none"></audio>  <br>
+  <!-- none : Artinya saat web di load, audio TIDAK akan otomatis di buffer / download hingga user menekan Tombol Play 
+    tidak terisi untuk buffer nya, akan terisi apabila kita klik tombol play 
+  -->
+
+<!--
+   Atribut Loop
+Atribut ini digunakan untuk memutar kembali audio yang sudah selesai diputar.
+
+<audio src="sample.mp3" controls loop></audio>
+
+
+Kita bisa mencobanya dengan memutar audio dan biarkan sampai selesai, setelah selesai file audio akan otomatis terputar kembali.
+
+- Atribut Preload
+Atribut ini berfungsi untuk mengatur bagaimana proses browser untuk men-buffer / mendownload audio sebelum di play :
+Ada 3 value pada atribut preload
+
+auto : Artinya saat web di load, audio akan otomatis di buffer / download sehingga saat diplay tidak buffer lagi.
+none : Artinya saat web di load, audio TIDAK akan otomatis di buffer / download hingga user menekan Tombol Play
+meta : Artinya saat web di load, audio akan di buffer / download sebagian dan sebagian yang lain saat di Play-->
+<br> <br> <br> <br><br> <br> <br>
+
+<!--akan menampilkan audio yang dikenali browser , dan apabila dari ker 3 source yang di tulis tidak kompatible maka akan menampilkan source code dengan script yang bisa di tampilkan oleh browser 
+
+- Memuat dua format audio
+Tentunya akan ada beberapa browser yang tidak support dengan sebuah audio. untuk mengatasi hal tersebut kita bisa memasukkan beberapa jenis audio didalam element audio, yang nantinya akan berfungsi memberikan alternatif jika salah satu audio tidak berfungsi akan memutar format audio yang lain-->
+<audio controls>
+  <source src="example-file.mp3" type="video/mp3" />
+  <source src="sample3.mp3" type="video/mp3" />
+  <source src="sample4.mp3" type="video/mp3" />
+</audio>
+<br> <br> <br> <br> <br> <br>
+
+<!--Atribut Autoplay
+Atribut ini berfungsi untuk membuat audio kita langsung terplay ketika halaman website diakses. Namun kadang-kadang terjadi kendala pada autoplay di beberapa browser.-->
+<audio src="example-file.mp3" controls autoplay></audio>
+
+
+
+</body>
+
+</html>

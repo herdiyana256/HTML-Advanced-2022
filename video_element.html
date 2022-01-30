@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="eng" dir="ltr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name=viewport content="width-device-width, initial-scale=1.0">
+  <meta name="author" content="STMIK Muhammadiyah - HTML">
+  <meta name="Keywords" content="STMIK MJ Matraman, STMIK MJ Ciracas, STMIK MJ Bekasi">
+  <meta name="description" content="Seputar Kami - STMIK Muhammadiyah Jakarta">
+  <meta http-equiv="60">
+  <title>HTML - Video Element </title>
+</head>
+
+<body>
+  <video src="file_example_MP4_480_1_5MG.mp4" controls></video>
+  <br> <br>
+
+  <!-- <video src="file_example_MP4_480_1_5MG.mp4" controls muted ></video>
+      Otomatis video akan termuted  / terdisable -->
+
+
+
+  <!-- <video src="file_example_MP4_480_1_5MG.mp4" controls loop></video> 
+      melakukan play kembali apabila video sudah selesai berputar -->
+
+
+  <!-- satuan pixel agak kecil , cenderung menyesuaikan size device / Hanphone -->
+  <video src="file_example_MP4_480_1_5MG.mp4" controls width="200px" height="200px"></video>
+  <br> <br> <br>
+  <!-- satuan % , cenderung ukuran nya besar dan biasa digunakan di dalam sebuah website -->
+  <video src="file_example_MP4_480_1_5MG.mp4" controls width="20%" height="20%"></video>
+  <br> <br> <br>
+
+  <!--Attribute poster biasa digunakan untuk sebagai thumbsnail pada sebuah video-->
+  <video src="file_example_MP4_480_1_5MG.mp4" controls poster="img/gambar.jpg"></video>
+
+  <br> <br> <br> <br> <br> <br> <br>
+  <video src="file_example_MP4_480_1_5MG.mp4" controls preload="auto"></video>
+  <!--saat web di load pada video akan otomatis terbuffer atau terdownload-->
+  <video src="file_example_MP4_480_1_5MG.mp4" controls preload="metadata"></video>
+  <!--saat web di load pada video akan terbuffer atau terdownload, namun hanya sebagian dan sebagian lagi ketika user mengklik play video nya -->
+  <video src="file_example_MP4_480_1_5MG.mp4" controls preload="none"></video>
+  <!--saat web di load ada video tidak akan otomatis terbuffer atau terdownload, sebelum user mengklik play video nya -->
+  <br> <br> <br> <br>
+
+  <video src="file_example_MP4_480_1_5MG.mp4" controls autoplay></video>
+  <br> <br> <br>
+
+  <!--Browser akan memilih darikedua file video yang ingin ditampilkan, dan akan menampilkan sesuai jenis video yang support atau bisa ditampilkan di browser -->
+  <video controls>
+    <source src="file_example_MP4_480_1_5MG.mp4" type="video/mp4">
+    <source src="file_example_MP4_480_1_5MG.ogv" type="video/ogv">
+  </video>
+
+
+  <!--Form merupakan bagian pada HTML yang dapat digunakan untuk membuat elemen Form pada halaman Web. Elemen Form dapat terdiri dari check box, radio button, menu, text box, text area, dan button. Text fields digunakan ketika pengguna ingin mengisi field seperti kata, angka dan lainnya.5 Des 2018
+              
+            1. Atribut Action
+Atribut action berfungsi untuk merujuk pada file untuk tujuan dari eksekusi pengiriman data.
+<form  action=""></form> 
+
+2. Atribut Method
+Atribut method berfungsi untuk memberitahu browser tentang proses pengiriman sebuah data. Value dari method ini bisa berupa “get” / “post”
+<form  action="" method="get"></form> 
+<form  action="" method="post"></form> 
+
+3. Atribut Target
+Atribut target sama fungsinya seperti saat kita berkenalan dengan Anchor Element (<a></a>).
+<form  action="" method="post" target="_blank"></form> 
+Dengan atribut tersebut ketika form dieksekusi akan membuka tab baru dan akan menuju sesuai value atribut action
+
+4. Atribut Novalidate
+Atribut ini berfungsi untuk menonaktifkan validasi bawaan dari element yang berada didalam Element Form.
+<form  action="" Novalidate></form> 
+
+NOTE : Saat ini kita hanya bisa mengenal penulisan form dan atribut-atribut tersebut, kita belum bisa mencobanya sekarang karena akan berhubungan dengan bahasa lain, seperti php, javascript atau yang lainnya.
+Kita akan bisa mencoba mempraktekkannya saat nanti sudah masuk ke materi javascript    
+            
+            -->
+  <form action="" method="post" target="blank" novalidate></form>
+
+  <input type="text" value="DKI Jakarta ">
+  <!--membuat value : DKI Jakarta -->
+  <br>
+  <input type="text" size="7">
+  <!--membuat value dalam garis input dengan size : 7-->
+  <br>
+  <input type="text" value="DKI Jakarta" disabled>
+  <!--membuat  element input dengan value yang disable-->
+  <br>
+  <input type="text" value="Bandung" readonly>
+  <!-- membuat element input dengan value yang hanya bisa dibaca, tidak dapat di ubah -->
+  <br>
+  <input type="text" maxlength="8">
+  <!-- membuat element type dengan menggunakan menambahkan property maxlength / max karakter sesuai dengan parameter yang di buat -->
+  <br>
+  <input type="text" autofocus>
+  <!-- membuat element dengan menambahkan property "autofocus" sehingga pada saat ditampilkan pada form input sudah otomatis kursor berada di target atau lokasi yang ingin kita lakukan pengisian data  -->
+  <br>
+  <input type="text" placeholder="Kata Sementara">
+  <!-- membuat element dengan menambahkan property "placeholder sehingga pada saat di tampilkan menunjukan katas sementara yang sudah di buat pada input, dan pada saat kita ingin melakukan pengisian data atau di klik pada tulisan tsb akan hilang "-->
+  <!-- element unput bisa di tulis diluar dari element form, namun element input lebih baik di input didalam element from-->
+  <br>
+  <br><br>
+  <form>
+    <input type="text" required>
+    <!-- dengan menambahkan property required maka pada input didalam form , text atau isian harus di isi /not null  ( please fill out this field)-->
+    <input type="submit">
+    <br>
+  </form>
+  <form>
+    <input type="text" required
+      oninvalid="this.setCustomValidity('Anda belum mengisi nama lengkap, Harap Periksa Kembali!')">
+    <input type="submit">
+  </form>
+
+  <form>
+    <!-- Atribut Name
+Atribut Name ini berfungsi sebagai penanda sebuah element input di dalam form, kita tidak bisa melihat perbedaanya secara tampilan, namun kita bisa melihatnya nanti saat kita sudah mempraktekkannya di materi study kasus-->
+    <!-- Membuat form input nama dengan name dan value -->
+    <input type="text" name="First_Name" value="Herdiyan">
+    <input type="text" name="Last_Name" value="Adam Putra">
+    <input type="text" name="Full_Name" value="Herdiyan Adam Putra">
+
+  </form>
+  <br> <br> <br> <br>
+  <form>
+    <!--- Atribut Type (Hidden) 
+Atribut Type pada element input memiliki value / nilai yang berbeda-beda salah satunya adalah “hidden”
+<input type="hidden">  
+kita bisa melakukan pengecekan pada sebuah source code pada inspect , maka pada structure akan terlihat sebuah value hidden , sehingga pada input yang di tulis sudah di buat sebuah value ( tidak terlihat )-->
+    <p>Nama Depan<input type="text"></p>
+    <p>Nama Belakang<input type="hidden"></p>
+    <p>Nama Lengkap <input type="text"></p>
+  </form>
+  <br>
+  <br>
+  <br>
+
+  <form>
+    <!-- Atribut Type Password 
+Atribut Type pada element input memiliki value / nilai yang berbeda-beda salah satunya adalah “password”
+<input type="password">-->
+    <p>Username : <input type="text"></p>
+    <br>
+
+    <!--- Atribut Type Image 
+Atribut Type pada element input memiliki value / nilai yang berbeda-beda salah satunya adalah “image”.
+Biasanya atribut type image digunakan untuk membuat sebuah button dari sebuah gambar.-->
+    <input type="image" src="img/button.png" width="100px" height="100px"> <!--Maka pada saat dijalankan pada gambar button sudah berubah menjadi tombol button 
+    -->
+  </form>
+
+</body>
+
+</html>
